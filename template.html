@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="http://twitter.github.com/bootstrap/1.4.0/bootstrap.min.css">
+</head>
+<body style="padding-top:40px;">
+	<div class="topbar">
+		<div class="topbar-inner">
+			<div class="container">
+				<a class="brand" href="#">{Need Name}</a>
+				<ul class="nav">
+					<li><a href="#">Data Entry</a></li>
+					<li><a href="#">Admin</a></li>
+					<li><a href="#">My Profile</a></li>
+					<li><a href="#">Logout</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="container">
+			<br/>
+			<h2>Wireframed Header</h2>
+			<br/>
+			<br/>
+			<h4>Admin Panel</h4>
+			<blockquote><p>Here is a template for the administration panel. Admins can publish announcements, upload pertinent documents, and control what users have access to their data.</p></blockquote>
+			<div id="admin-container">
+				<table class="bordered-table zebra-striped">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Username</th>
+							<th>Device Id</th>
+							<th>Approved</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>mdobson</td>
+							<td>123417hlkasdfakhldf</td>
+							<td><input type="button" class="btn success" value="Activate"/></td>
+						<tr>
+					</tbody>
+				</table>
+				
+				<br/>
+				<br/>
+				<h4>Published Content</h4>
+				<blockquote><p>This is management for published content to the site.</p></blockquote>
+				<table class="bordered-table zebra-striped">
+					<thead>
+						<tr>
+							<th>#</th>
+							<th>Name</th>
+							<th>Date</th>
+							<th>Posted By</th>
+							<th>Delete?</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>1</td>
+							<td>Updates in enrollment</td>
+							<td>01-11-12</td>
+							<td>mdobson</td>
+							<td><input type="button" class="btn danger" value="Delete"/></td>
+						<tr>
+					</tbody>
+				</table>
+				<br/>
+				<br/>
+				<h4>Upload Content</h4>
+				<label for="file">File Input: &nbsp;</label>
+				<div class="input">
+					<input type="file" name="file" class="input-file"/>
+				</div>
+			</div>
+			<br/>
+			<br/>
+			<div id="data-entry">
+				<h4>Sample Data Entry</h4>
+				<blockquote><p>Here is some sample data entry objects. Eventually the user will be able to create these.</p></blockquote>
+				<div class="row">
+					<div class="span10 offset1">
+						<form class="">
+							<fieldset>
+								<legend>Case Report</legend>
+								<h5>Here is a sub-section header</h5>
+								<label for="diagnosis">Select A Diagnosis:</label>
+								<div class="input">
+									<select name="diagnosis">
+										<option>Sepsis</option>
+										<option>Ebola</option>
+										<option>H1N1</option>
+									</select>
+								</div>
+								<br/>
+								<label for="bp">Blood Pressure:</label>
+								<div class="clearfix error">
+									<div class="input">
+										<input type="text" name="bp" class="span2 error"/>
+										<span class="help-inline">This doesn't look quite right. Double-Check!</span>
+									</div>
+								</div>
+								<label for="Height">Height:</label>
+								<div class="input">
+									<input type="text" name="Height" class="span2"/>
+								</div>
+								<br/>
+								<label for="Weight">Weight:</label>
+								<div class="input">
+									<input type="text" name="Weight" class="span2"/>
+								</div>
+								<br/>
+								<label for="Oxygen">Oxygen Level:</label>
+								<div class="input">
+									<input type="text" name="Oxygen" class="span2"/>
+								</div>
+								<br/>
+								<label for="Cholesterol">Cholesterol:</label>
+								<div class="input">
+									<input type="text" name="Cholesterol" class="span2"/>
+								</div>
+								
+								<br/>
+								<br/>
+								<h5>Here is another sub-section header</h5>
+								<label>Stringent Input:</label>
+								<div class="input">
+									<ul class="inputs-list">
+										<li>
+											<label>
+												<input type="checkbox" name="optionsCheckboxes" value="option1">
+												<span>Option one is this and that be sure to include why it's great</span>
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox" name="optionsCheckboxes" value="option1">
+												<span>Option two is this and that be sure to include why it's great</span>
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox" name="optionsCheckboxes" value="option1">
+												<span>Option three is this and that be sure to include why it's great</span>
+											</label>
+										</li>
+										<li>
+											<label>
+												<input type="checkbox" name="optionsCheckboxes" value="option1">
+												<span>Option four is this and that be sure to include why it's great</span>
+											</label>
+										</li>
+									</ul>
+								</div>
+								<br/>
+								<br/>
+								<label for="txta">Entry section:</label>
+								<div class="input">
+									<textarea name="txta" class="xxlarge" rows=3></textarea>
+									<span class="help-block">Here is a more verbose form of data entry.</span>
+								</div>
+								<br/>
+								<br/>
+								<div class="actions">
+									<input type="button" class="btn primary" value="Submit"/> &nbsp;
+									<input type="button" class="btn " value="Cancel">
+								</div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
